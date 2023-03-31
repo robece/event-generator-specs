@@ -11,12 +11,6 @@ Desired fields with the cloud events schema:
   "specversion": "1.0"
 }
 
-Desired variables:
-- {subscription-id} random guid
-- {resource-group} random words in lowercase
-- {resource-instance} random words in lowercase
-- {api-id} random guid
-
 [QUESTION]
 
 Output:
