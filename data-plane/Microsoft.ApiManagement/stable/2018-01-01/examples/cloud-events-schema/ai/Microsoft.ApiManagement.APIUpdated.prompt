@@ -31,7 +31,7 @@ function printEvents(events) {
 
 Follow the instructions:
 Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time and replace the desired variables: subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, api-id as random guid.
-Write a javascript  method to generate a random guid.
+Write a javascript method to generate a random guid.
 Write a javascript method to generate a random word in lowercase.
 Write a javascript method that executes the previous method and print the serialized result beautified.
 Provide only javascript code.
