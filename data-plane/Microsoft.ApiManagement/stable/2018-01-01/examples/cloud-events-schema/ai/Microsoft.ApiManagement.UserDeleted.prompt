@@ -1,4 +1,4 @@
-Desired fields with the cloud events schema:
+Desired fields for event:
 {
   "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.ApiManagement/service/{resource-instance}",
   "subject": "/users/{user-name}",
