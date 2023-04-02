@@ -1,0 +1,24 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.ApiManagement/service/{resource-instance}",
+  "subject": "/gateways/{gateway-name}/hostnameConfigurations/{hostname-name}",
+  "type": "Microsoft.ApiManagement.GatewayHostnameConfigurationDeleted",
+  "time": "2021-07-02T00:47:47.8536532Z",
+  "id": "92c502f2-a966-42a7-a428-d3b319844544",
+  "data": {
+    "resourceUri": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.ApiManagement/service/{resource-instance}/gateways/{gateway-name}/hostnameConfigurations/{hostname-name}"
+  },
+  "specVersion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time and replace the desired variables: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, gateway-name as a random word in lowercase, host-name as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
