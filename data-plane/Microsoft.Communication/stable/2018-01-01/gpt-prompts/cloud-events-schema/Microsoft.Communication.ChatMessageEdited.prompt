@@ -1,0 +1,50 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Communication/communicationServices/{resource-instance}",
+  "subject": "thread/{thread-id}/sender/{sender-id}/recipient/{recipient-id}",
+  "type": "Microsoft.Communication.ChatMessageEdited",
+  "time": "2021-02-19T00:28:21.7456718Z",
+  "id": "93fc1037-b645-4eb0-a0f2-d7bb3ba6e060",
+  "data": {
+    "editTime": "2021-02-19T00:28:20.784Z",
+    "messageBody": "Let's Chat about new communication services.",
+    "messageId": "1613694357917",
+    "metadata": {
+      "key": "{keyvault-name}",
+      "description": "A map of data associated with the message"
+    },
+    "senderId": "{sender-id}",
+    "senderCommunicationIdentifier": {
+      "rawId": "{raw-id}",
+      "communicationUser": {
+        "id": "{raw-id}"
+      }
+    },
+    "senderDisplayName": "Bob(Admin)",
+    "composeTime": "2021-02-19T00:25:57.917Z",
+    "type": "Text",
+    "version": 1613694500784,
+    "recipientId": "{recipient-id}",
+    "recipientCommunicationIdentifier": {
+      "rawId": "{raw-id}",
+      "communicationUser": {
+        "id": "{raw-id}"
+      }
+    },
+    "transactionId": "1mL4XZH2gEecu/alk9tOtw.2.1.2.1.1833042153.1.7",
+    "threadId": "19:6e5d6ca1d75044a49a36a7965ec4a906@thread.v2"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, thread-id as random guid, sender-id as random guid, recipient-id as random guid, raw-id as random guid, keyvault-name as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:

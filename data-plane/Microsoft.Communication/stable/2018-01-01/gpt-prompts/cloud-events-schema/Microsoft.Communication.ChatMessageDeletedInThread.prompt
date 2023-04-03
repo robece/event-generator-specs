@@ -1,0 +1,37 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/microsoft.communication/communicationservices/{resource-instance}",
+  "subject": "thread/{thread-id}/sender/{sender-id}",
+  "type": "Microsoft.Communication.ChatMessageDeletedInThread",
+  "time": "2021-02-20T01:00:14.8518034Z",
+  "id": "17d9c39d-0c58-4ed8-947d-c55959f57f75",
+  "data": {
+    "deleteTime": "2021-02-19T16:59:10.464-08:00",
+    "messageId": "1613782685440",
+    "type": "Text",
+    "version": "1613782814333",
+    "senderDisplayName": "Scott",
+    "senderCommunicationIdentifier": {
+      "rawId": "{raw-id}",
+      "communicationUser": {
+        "id": "{raw-id}"
+      }
+    },
+    "composeTime": "2021-02-19T16:58:05.44-08:00",
+    "threadId": "19:e07c8ddc5bab4c059ea9f11d29b544b6@thread.v2",
+    "transactionId": "HqU6PeK5AkCRSpW8eAbL0A.1.1.2.1.987824181.1"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, thread-id as random guid, sender-id as random guid, raw-id as random guid.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:

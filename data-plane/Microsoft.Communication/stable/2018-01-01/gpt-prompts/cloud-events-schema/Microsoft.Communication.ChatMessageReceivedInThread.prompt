@@ -1,0 +1,41 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/microsoft.communication/communicationservices/{resource-instance}",
+  "subject": "thread/{thread-id}/sender/{sender-id}",
+  "type": "Microsoft.Communication.ChatMessageReceivedInThread",
+  "time": "2021-02-20T01:07:10.5704596Z",
+  "id": "4f614f97-c451-4b82-a8c9-1e30c3bfcda1",
+  "data": {
+    "messageBody": "Talk about new Thread Events in commuication services",
+    "messageId": "1613783230064",
+    "metadata": {
+      "key": "value",
+      "description": "A map of data associated with the message"
+    },
+    "type": "Text",
+    "version": "1613783230064",
+    "senderDisplayName": "Bob",
+    "senderCommunicationIdentifier": {
+      "rawId": "{raw-id}",
+      "communicationUser": {
+        "id": "{raw-id}"
+      }
+    },
+    "composeTime": "2021-02-19T17:07:10.064-08:00",
+    "threadId": "19:5b3809e80e4a439d92c3316e273f4a2b@thread.v2",
+    "transactionId": "foMkntkKS0O/MhMlIE5Aag.1.1.1.1.1004077250.1"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, thread-id as random guid, sender-id as random guid, raw-id as random guid.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
