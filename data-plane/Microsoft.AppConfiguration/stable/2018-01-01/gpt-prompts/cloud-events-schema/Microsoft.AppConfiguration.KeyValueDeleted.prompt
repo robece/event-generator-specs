@@ -1,0 +1,27 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.AppConfiguration/configurationstores/{resource-instance}",
+  "subject": "https://{resource-instance}.azconfig.io/kv/{keyvault-name}?label={label-name}",
+  "type": "Microsoft.AppConfiguration.KeyValueDeleted",
+  "time": "2019-05-31T20:05:03.0000000Z",
+  "id": "84e17ea4-66db-4b54-8050-df8f7763f87b",
+  "data": {
+    "key": "{keyvault-name}",
+    "label": "{label-name}",
+    "etag": "{etag-name}",
+    "syncToken": "{syncToken-name}"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, keyvault-name as a random word in lowercase, label-name as a random word in lowercase, etag-name random md5 in lowercase, syncToken-name random sha1 in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
