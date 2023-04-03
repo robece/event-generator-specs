@@ -15,7 +15,7 @@ Desired fields for event:
 {{methods}}
 
 Follow the instructions:
-Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables: 
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
 subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, api-id as random guid.
 Write a javascript method to generate a random guid.
 Write a javascript method to generate a random word in lowercase.
