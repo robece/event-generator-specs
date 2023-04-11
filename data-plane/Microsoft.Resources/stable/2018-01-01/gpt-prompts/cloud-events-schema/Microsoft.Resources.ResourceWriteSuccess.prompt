@@ -1,0 +1,67 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}",
+  "subject": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{storage-name}",
+  "type": "Microsoft.Resources.ResourceWriteSuccess",
+  "time": "2018-07-19T18:38:04.6117357Z",
+  "id": "4db48cba-50a2-455a-93b4-de41a3b5b7f6",
+  "data": {
+    "authorization": {
+      "scope": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{storage-name}",
+      "action": "Microsoft.Storage/storageAccounts/write",
+      "evidence": {
+        "role": "Subscription Admin"
+      }
+    },
+    "claims": {
+      "aud": "{audience-claim}",
+      "iss": "{issuer-claim}",
+      "iat": "{issued-at-claim}",
+      "nbf": "{not-before-claim}",
+      "exp": "{expiration-claim}",
+      "_claim_names": "{\"groups\":\"src1\"}",
+      "_claim_sources": "{\"src1\":{\"endpoint\":\"{URI}\"}}",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "aio": "{token}",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "rsa,mfa",
+      "appid": "{ID}",
+      "appidacr": "2",
+      "http://schemas.microsoft.com/2012/01/devicecontext/claims/identifier": "{ID}",
+      "e_exp": "{expiration}",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "{last-name}",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "{first-name}",
+      "ipaddr": "{IP-address}",
+      "name": "{full-name}",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "{ID}",
+      "onprem_sid": "{ID}",
+      "puid": "{ID}",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "{ID}",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "{ID}",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "{user-name}",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "{user-name}",
+      "uti": "{ID}",
+      "ver": "1.0"
+    },
+    "correlationId": "{ID}",
+    "resourceProvider": "Microsoft.Storage",
+    "resourceUri": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{storage-name}",
+    "operationName": "Microsoft.Storage/storageAccounts/write",
+    "status": "Succeeded",
+    "subscriptionId": "{subscription-id}",
+    "tenantId": "{tenant-id}"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, storage-name as a random word in lowercase, ID as random guid, audience-claim as random guid, issuer-claim as random guid, issued-at-claim as random guid, not-before-claim as random guid, expiration-claim as random guid, last-name as a random word in lowercase, first-name as a random word in lowercase, full-name as a random word in lowercase, user-name as a random word in lowercase, token as a random word in lowercase, URI as a random URL, tenant-id as random guid, IP-address a random IP Address.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
