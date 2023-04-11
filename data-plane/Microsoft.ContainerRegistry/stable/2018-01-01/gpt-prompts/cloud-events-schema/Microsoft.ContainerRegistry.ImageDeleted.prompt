@@ -1,0 +1,41 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.ContainerRegistry/registries/{resource-instance}",
+  "subject": "samples/nginx",
+  "type": "Microsoft.ContainerRegistry.ImageDeleted",
+  "time": "2021-09-08T06:49:40.5342401Z",
+  "id": "6fdef14c-2594-41e8-9156-c0376eb0a190",
+  "data": {
+    "id": "6fdef14c-2594-41e8-9156-c0376eb0a190",
+    "timestamp": "2021-09-08T06:49:40.1850248Z",
+    "action": "delete",
+    "location": "westus",
+    "target": {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "digest": "sha256:57a94fc99816c6aa225678b738ac40d85422e75dbb96115f1bb9b6ed77176166",
+      "repository": "samples/nginx"
+    },
+    "request": {
+      "id": "62a60cbd-1bfc-4742-b013-ed7098922ca6",
+      "host": "{host}",
+      "method": "DELETE",
+      "useragent": "python-requests/2.22.0"
+    },
+    "connectedRegistry": {
+      "name": "edge1"
+    }
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group-name as a random word in lowercase, resource-instance as a random word in lowercase, host as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:

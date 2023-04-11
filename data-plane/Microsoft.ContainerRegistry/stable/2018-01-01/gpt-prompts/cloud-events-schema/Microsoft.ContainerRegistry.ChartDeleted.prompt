@@ -1,0 +1,39 @@
+Desired fields for event:
+{
+    "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.ContainerRegistry/registries/{name}",
+    "subject": "mychart:1.0.0",
+    "type": "Microsoft.ContainerRegistry.ChartDeleted",
+    "time": "2019-03-12T22:42:08.7034064Z",
+    "id": "39136b3a-1a7e-416f-a09e-5c85d5402fca",
+    "data": {
+      "id": "ea3a9c28-5b17-40f6-a500-3f02b682927",
+      "timestamp": "2019-03-12T15:42:08.3783775-07:00",
+      "action": "chart_delete",
+      "location": "westus",
+      "target": {
+        "mediaType": "application/vnd.acr.helm.chart",
+        "size": 25265,
+        "digest": "sha256:7f060075264b5ba7c14c23672698152ae6a3ebac1c47916e4efe19cd624d5fab",
+        "repository": "repo",
+        "tag": "mychart-1.0.0.tgz",
+        "name": "mychart",
+        "version": "1.0.0"
+      },
+      "connectedRegistry": {
+        "name": "edge1"
+      }
+    },
+    "specversion": "1.0"
+  }
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group-name as random word in lowercase, name as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
