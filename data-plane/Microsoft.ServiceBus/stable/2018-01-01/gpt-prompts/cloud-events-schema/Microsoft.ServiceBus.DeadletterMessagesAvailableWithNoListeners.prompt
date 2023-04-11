@@ -1,0 +1,29 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/Microsoft.ServiceBus/namespaces/{your-service-bus-namespace}",
+  "subject": "topics/{your-service-bus-topic}/subscriptions/{your-service-bus-subscription}",
+  "type": "Microsoft.ServiceBus.DeadletterMessagesAvailableWithNoListeners",
+  "time": "2018-02-14T05:12:53.4133526Z",
+  "id": "dede87b0-3656-419c-acaf-70c95ddc60f5",
+  "data": {
+    "namespaceName": "YOUR SERVICE BUS NAMESPACE WILL SHOW HERE",
+    "requestUri": "https://{your-service-bus-namespace}.servicebus.windows.net/{your-topic}/subscriptions/{your-service-bus-subscription}/$deadletterqueue/messages/head",
+    "entityType": "subscriber",
+    "queueName": "QUEUE NAME IF QUEUE",
+    "topicName": "TOPIC NAME IF TOPIC",
+    "subscriptionName": "SUBSCRIPTION NAME"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, your-service-bus-namespace as a random word in lowercase, your-service-bus-topic as a random word in lowercase, your-service-bus-subscription as a random word in lowercase, your-topic a a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
