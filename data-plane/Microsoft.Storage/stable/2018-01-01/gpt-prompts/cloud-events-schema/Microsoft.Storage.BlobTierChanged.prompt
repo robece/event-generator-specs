@@ -1,0 +1,34 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{resource-instance}",
+  "subject": "/blobServices/default/containers/{container}/blobs/Template1.xlsx",
+  "type": "Microsoft.Storage.BlobTierChanged",
+  "time": "2021-08-16T03:13:40.5681296Z",
+  "id": "5ed67fc9-401e-0009-354c-92eb2106efc7",
+  "data": {
+    "api": "SetBlobTier",
+    "requestId": "5ed67fc9-401e-0009-354c-92eb21000000",
+    "eTag": "0x8D9606211320D17",
+    "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "contentLength": 17555,
+    "blobType": "BlockBlob",
+    "url": "{blob-service}/{container}/Template1.xlsx",
+    "sequencer": "0000000000000000000000000000B00D0000000005b7c63a",
+    "storageDiagnostics": {
+      "batchId": "24231d1f-a006-0065-004c-9240f2000000"
+    }
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, blob-service as a random word in lowercase, container as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:

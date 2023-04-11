@@ -1,0 +1,31 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{resource-instance}",
+  "subject": "BlobDataManagement/BlobInventory",
+  "type": "Microsoft.Storage.BlobInventoryPolicyCompleted",
+  "time": "2021-08-20T22:26:04.0000000Z",
+  "id": "5d055648-1126-4053-bc6f-f86b8d14790f",
+  "data": {
+    "scheduleDateTime": "2021-08-20T22:04:55Z",
+    "accountName": "jolovstorage",
+    "ruleName": "gao8.20",
+    "policyRunStatus": "Succeeded",
+    "policyRunStatusMessage": "Inventory run succeeded, refer manifest file for inventory details.",
+    "policyRunId": "83e7c94c-6973-4fbc-acdc-88277e448bf5",
+    "manifestBlobUrl": "{blob-service}/{container}/2021/08/20/22-04-55/gao8.20/gao8.20-manifest.json"
+  },
+  "specversion": "1.0"
+}
+
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, blob-service as a random word in lowercase, container as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:

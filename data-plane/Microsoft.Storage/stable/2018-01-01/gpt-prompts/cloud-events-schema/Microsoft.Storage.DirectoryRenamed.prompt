@@ -1,0 +1,33 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Storage/storageAccounts/{resource-instance}",
+  "subject": "/blobServices/default/containers/{container}/blobs/gaonewdir",
+  "type": "Microsoft.Storage.DirectoryRenamed",
+  "time": "2021-08-16T05:38:05.1425527Z",
+  "id": "45a3aa46-001f-0001-2d60-921dd1062e11",
+  "data": {
+    "api": "RenameDirectory",
+    "requestId": "45a3aa46-001f-0001-2d60-921dd1000000",
+    "destinationBlobUrl": "{blob-service}/{container}/gaonewdir",
+    "sourceBlobUrl": "{blob-service}/{container}/gaoname",
+    "destinationUrl": "{dfs-service}/{container}/gaonewdir",
+    "sourceUrl": "{dfs-service}/{container}/gaoname",
+    "sequencer": "00000000000000000000000000000102000000000001e1c6",
+    "storageDiagnostics": {
+      "batchId": "5f991456-5dcf-4b1b-9d49-562ee2b0757f"
+    }
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, blob-service as a random word in lowercase, container as a random word in lowercase, dfs-service as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
