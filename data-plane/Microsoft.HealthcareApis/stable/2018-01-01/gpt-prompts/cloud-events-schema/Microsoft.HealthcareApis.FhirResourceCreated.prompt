@@ -1,0 +1,27 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.HealthcareApis/workspaces/{resource-instance}",
+  "subject": "{fhir-account}.fhir.azurehealthcareapis.com/patient/e0a1f743-1a70-451f-830e-e96477163902",
+  "type": "Microsoft.HealthcareApis.FhirResourceCreated",
+  "time": "2021-09-08T01:14:04.5613214Z",
+  "id": "e4c7f556-d72c-e7f7-1069-1e82ac76ab41",
+  "data": {
+    "resourceType": "Patient",
+    "resourceFhirAccount": "{fhir-account}.fhir.azurehealthcareapis.com",
+    "resourceFhirId": "e0a1f743-1a70-451f-830e-e96477163902",
+    "resourceVersionId": 1
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, resource-instance as a random word in lowercase, fhir-account as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
