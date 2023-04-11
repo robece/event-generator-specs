@@ -1,0 +1,28 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourcegroups/{resource-group}/providers/microsoft.communication/communicationservices/{communication-services-resource-name}",
+  "subject": "/phonenumber/15555555555",
+  "type": "Microsoft.Communication.SMSReceived",
+  "time": "2020-09-18T00:27:47.0000000Z",
+  "id": "Incoming_20200918002745d29ebbea-3341-4466-9690-0a03af35228e",
+  "data": {
+    "MessageId": "Incoming_20200918002745d29ebbea-3341-4466-9690-0a03af35228e",
+    "From": "15555555555",
+    "To": "15555555555",
+    "Message": "Great to connect with ACS events",
+    "ReceivedTimestamp": "2020-09-18T00:27:45.32Z"
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, communication-services-resource-name as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
