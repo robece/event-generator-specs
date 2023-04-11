@@ -1,0 +1,17 @@
+Desired javascript method to generate a random guid:
+function randomGuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+Desired javascript  method to generate a random word in lowercase:
+function randomWord() {
+  return Math.random().toString(36).substring(2, 8).toLowerCase();
+}
+
+Desired javascript method to serialized result beautified:
+function printEvents(events) {
+  console.log(JSON.stringify(events, null, 2));
+}

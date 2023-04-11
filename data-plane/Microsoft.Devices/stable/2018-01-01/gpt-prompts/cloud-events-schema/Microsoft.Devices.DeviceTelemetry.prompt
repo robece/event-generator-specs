@@ -1,0 +1,41 @@
+Desired fields for event:
+{
+  "source": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.devices/iothubs/{hub-name}",
+  "subject": "devices/LogicAppTestDevice",
+  "type": "Microsoft.Devices.DeviceTelemetry",
+  "time": "2019-01-07T20:58:30.4800000Z",
+  "id": "9af86784-8d40-fe2g-8b2a-bab65e106785",
+  "data": {
+    "body": {
+      "Weather": {
+        "Temperature": 900
+      },
+      "Location": "USA"
+    },
+    "properties": {
+      "Status": "Active"
+    },
+    "systemProperties": {
+      "iothub-content-type": "application/json",
+      "iothub-content-encoding": "utf-8",
+      "iothub-connection-device-id": "d1",
+      "iothub-connection-auth-method": "{\"scope\":\"device\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}",
+      "iothub-connection-auth-generation-id": "123455432199234570",
+      "iothub-enqueuedtime": "2019-01-07T20:58:30.48Z",
+      "iothub-message-source": "Telemetry"
+    }
+  },
+  "specversion": "1.0"
+}
+
+{{methods}}
+
+Follow the instructions:
+Write a javascript method to generate an array of {{numberOfEvents}} events with random id and time, declare const variables within each loop: 
+subscription-id as random guid, resource-group as random word in lowercase, hub-name as a random word in lowercase.
+Write a javascript method to generate a random guid.
+Write a javascript method to generate a random word in lowercase.
+Write a javascript method that executes the previous method and print the serialized result beautified.
+Provide only javascript code.
+
+Output:
